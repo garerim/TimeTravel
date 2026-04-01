@@ -7,22 +7,22 @@ const features = [
   {
     icon: Clock,
     title: "Technologie Temporelle",
-    description: "Notre technologie de pointe garantit un voyage sur et precis a travers les epoques.",
+    description: "Notre technologie de pointe garantit un voyage sûr et précis à travers les époques.",
   },
   {
     icon: Shield,
-    title: "Securite Maximale",
-    description: "Protocoles de securite avances et guides temporels experimentes pour chaque voyage.",
+    title: "Sécurité Maximale",
+    description: "Protocoles de sécurité avancés et guides temporels expérimentés pour chaque voyage.",
   },
   {
     icon: Star,
-    title: "Experience Premium",
-    description: "Un service 5 etoiles avec immersion totale dans l'epoque de votre choix.",
+    title: "Expérience Premium",
+    description: "Un service 5 étoiles avec immersion totale dans l'époque de votre choix.",
   },
   {
     icon: Users,
     title: "Guides Experts",
-    description: "Des historiens et scientifiques passionnes vous accompagnent a chaque instant.",
+    description: "Des historiens et scientifiques passionnés vous accompagnent à chaque instant.",
   },
 ];
 
@@ -41,8 +41,8 @@ export default function About() {
             Pourquoi choisir <span className="text-primary">TimeTravel</span> ?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Depuis 2035, nous offrons des experiences temporelles inegalees,
-            alliant luxe, securite et immersion historique.
+            Depuis 2035, nous offrons des expériences temporelles inégalées,
+            alliant luxe, sécurité et immersion historique.
           </p>
         </motion.div>
 

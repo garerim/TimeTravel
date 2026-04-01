@@ -4,7 +4,7 @@ import About from "@/components/About";
 import Destinations from "@/components/Destinations";
 import Quiz from "@/components/Quiz";
 import Footer from "@/components/Footer";
-import Chatbot from "@/components/Chatbot";
+import ChatbotLazy from "@/components/ChatbotLazy";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <Quiz />
       </main>
       <Footer />
-      <Chatbot />
+      <ChatbotLazy />
     </>
   );
 }

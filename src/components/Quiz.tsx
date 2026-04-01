@@ -16,23 +16,23 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Quel type d'experience recherchez-vous ?",
+    question: "Quel type d'expérience recherchez-vous ?",
     options: [
       { label: "Culturelle et artistique", scores: [1, 0, 2] },
       { label: "Aventure et nature", scores: [0, 2, 0] },
-      { label: "Elegance et raffinement", scores: [2, 0, 1] },
+      { label: "Élégance et raffinement", scores: [2, 0, 1] },
     ],
   },
   {
-    question: "Votre periode preferee ?",
+    question: "Votre période préférée ?",
     options: [
-      { label: "Histoire moderne (XIXe-XXe siecle)", scores: [2, 0, 0] },
+      { label: "Histoire moderne (XIXe-XXe siècle)", scores: [2, 0, 0] },
       { label: "Temps anciens et origines", scores: [0, 2, 0] },
       { label: "Renaissance et classicisme", scores: [0, 0, 2] },
     ],
   },
   {
-    question: "Vous preferez :",
+    question: "Vous préférez :",
     options: [
       { label: "L'effervescence urbaine", scores: [2, 0, 1] },
       { label: "La nature sauvage", scores: [0, 2, 0] },
@@ -40,11 +40,11 @@ const questions: Question[] = [
     ],
   },
   {
-    question: "Votre activite ideale :",
+    question: "Votre activité idéale :",
     options: [
       { label: "Visiter des monuments", scores: [2, 0, 1] },
       { label: "Observer la faune", scores: [0, 2, 0] },
-      { label: "Explorer des musees", scores: [1, 0, 2] },
+      { label: "Explorer des musées", scores: [1, 0, 2] },
     ],
   },
 ];
@@ -80,10 +80,10 @@ export default function Quiz() {
           className="text-center mb-12"
         >
           <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-5xl font-bold mb-4">
-            Trouvez votre <span className="text-primary">epoque ideale</span>
+            Trouvez votre <span className="text-primary">époque idéale</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Repondez a 4 questions pour decouvrir la destination temporelle faite
+            Répondez à 4 questions pour découvrir la destination temporelle faite
             pour vous.
           </p>
         </motion.div>
@@ -102,11 +102,11 @@ export default function Quiz() {
                   <Compass className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
-                  Pret pour l&apos;aventure ?
+                  Prêt pour l&apos;aventure ?
                 </h3>
                 <p className="text-muted-foreground mb-8 max-w-md">
-                  En 4 questions, nous allons determiner quelle epoque
-                  correspond le mieux a votre personnalite.
+                  En 4 questions, nous allons déterminer quelle époque
+                  correspond le mieux à votre personnalité.
                 </p>
                 <Button
                   onClick={() => setStep(0)}
@@ -179,14 +179,14 @@ export default function Quiz() {
                       <div className="relative w-full h-48 md:h-56 rounded-xl overflow-hidden mb-6">
                         <Image
                           src={result.image}
-                          alt={result.title}
+                          alt={`Destination recommandée : ${result.title} — ${result.epoch}`}
                           fill
                           className="object-cover"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
                       </div>
                       <h3 className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl font-bold mb-2">
-                        Votre destination ideale :
+                        Votre destination idéale :
                       </h3>
                       <p className="text-primary text-xl font-semibold mb-4">
                         {result.title} - {result.epoch}
@@ -202,7 +202,7 @@ export default function Quiz() {
                             "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8"
                           )}
                         >
-                          Voir les details
+                          Voir les détails
                         </a>
                         <Button
                           variant="outline"

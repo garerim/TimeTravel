@@ -1,5 +1,3 @@
-"use client";
-
 import { Clock, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -16,21 +14,27 @@ export default function Footer() {
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Votre agence de voyage temporel de luxe. Depuis 2035, nous
-              transformons les reves d&apos;exploration historique en realite.
+              transformons les rêves d&apos;exploration historique en réalité.
             </p>
           </div>
 
           <div>
             <h3 className="font-semibold mb-4">Destinations</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Paris 1889 - Belle Epoque
+              <li>
+                <a href="#destinations" className="hover:text-primary transition-colors">
+                  Paris 1889 - Belle Époque
+                </a>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Cretace - Ere des dinosaures
+              <li>
+                <a href="#destinations" className="hover:text-primary transition-colors">
+                  Crétacé - Ère des dinosaures
+                </a>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Florence 1504 - Renaissance
+              <li>
+                <a href="#destinations" className="hover:text-primary transition-colors">
+                  Florence 1504 - Renaissance
+                </a>
               </li>
             </ul>
           </div>
@@ -55,9 +59,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2035 TimeTravel Agency. Tous droits reserves.</p>
+          <p>&copy; 2035 TimeTravel Agency. Tous droits réservés.</p>
           <p className="mt-1 text-xs">
-            Projet pedagogique - M1/M2 Digital & IA
+            Projet pédagogique - M1/M2 Digital & IA
           </p>
         </div>
       </div>

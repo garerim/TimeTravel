@@ -17,6 +17,7 @@ export default function Hero() {
         muted
         loop
         playsInline
+        poster="/images/paris.png"
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/videos/teaser.mp4" type="video/mp4" />
@@ -46,7 +47,7 @@ export default function Hero() {
           className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6"
         >
           Explorez l&apos;histoire,{" "}
-          <span className="text-primary">reinventee</span>
+          <span className="text-primary">réinventée</span>
         </motion.h1>
 
         <motion.p
@@ -55,8 +56,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          De la Belle Epoque au Cretace, en passant par la Renaissance
-          florentine. Vivez des moments uniques a travers les epoques.
+          De la Belle Époque au Crétacé, en passant par la Renaissance
+          florentine. Vivez des moments uniques à travers les époques.
         </motion.p>
 
         <motion.div
@@ -72,7 +73,7 @@ export default function Hero() {
               "bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-full font-semibold"
             )}
           >
-            Decouvrir nos destinations
+            Découvrir nos destinations
           </a>
           <a
             href="#quiz"
@@ -81,7 +82,7 @@ export default function Hero() {
               "border-primary/30 text-foreground hover:bg-primary/10 text-base px-8 py-6 rounded-full"
             )}
           >
-            Trouvez votre epoque ideale
+            Trouvez votre époque idéale
           </a>
         </motion.div>
       </div>

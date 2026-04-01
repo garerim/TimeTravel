@@ -29,7 +29,7 @@ function DestinationCard({
       <div className="relative h-64 md:h-72 overflow-hidden">
         <Image
           src={dest.image}
-          alt={dest.title}
+          alt={`Voyage temporel vers ${dest.title} — ${dest.epoch}`}
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, 33vw"
@@ -103,6 +103,7 @@ function DestinationModal({
             muted
             loop
             playsInline
+            preload="none"
             className="w-full h-full object-cover"
           >
             <source src={dest.video} type="video/mp4" />
@@ -158,7 +159,7 @@ function DestinationModal({
           </div>
 
           <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full py-6 text-base font-semibold">
-            Reserver ce voyage - {dest.price} &euro;
+            Réserver ce voyage - {dest.price} &euro;
           </Button>
         </div>
       </motion.div>
@@ -183,7 +184,7 @@ export default function Destinations() {
             Nos <span className="text-primary">Destinations</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Trois epoques extraordinaires vous attendent. Choisissez votre
+            Trois époques extraordinaires vous attendent. Choisissez votre
             aventure et laissez-vous transporter.
           </p>
         </motion.div>
