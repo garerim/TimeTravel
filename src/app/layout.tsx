@@ -58,12 +58,17 @@ const jsonLd = [
     "@id": "https://time-travel-beta.vercel.app/#organization",
     name: "TimeTravel Agency",
     url: "https://time-travel-beta.vercel.app/",
-    logo: "https://time-travel-beta.vercel.app/favicon.ico",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://time-travel-beta.vercel.app/images/paris.png",
+      width: 1200,
+      height: 630,
+    },
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+33-1-23-45-67-89",
       email: "contact@timetravel-agency.com",
-      contactType: "customer service",
+      contactType: "customer support",
       availableLanguage: "French",
     },
     address: {
@@ -94,6 +99,7 @@ const jsonLd = [
     },
     description:
       "Votre agence de voyage temporel de luxe. Depuis 2035, nous transformons les rêves d'exploration historique en réalité.",
+    image: "https://time-travel-beta.vercel.app/images/paris.png",
     priceRange: "€€€€",
     currenciesAccepted: "EUR",
   },
@@ -117,12 +123,15 @@ const jsonLd = [
     description:
       "Vivez l'inauguration de la Tour Eiffel et l'Exposition Universelle dans le Paris flamboyant de la Belle Époque.",
     image: "https://time-travel-beta.vercel.app/images/paris.png",
+    sku: "TT-PARIS-1889",
     brand: { "@type": "Brand", name: "TimeTravel Agency" },
     offers: {
       "@type": "Offer",
       url: "https://time-travel-beta.vercel.app/#destinations",
       priceCurrency: "EUR",
       price: "12500",
+      priceValidUntil: "2026-12-31",
+      itemCondition: "https://schema.org/NewCondition",
       availability: "https://schema.org/InStock",
     },
   },
@@ -133,12 +142,15 @@ const jsonLd = [
     description:
       "Explorez un monde dominé par les dinosaures, où la nature règne en maître absolu sur une Terre méconnaissable.",
     image: "https://time-travel-beta.vercel.app/images/dino.png",
+    sku: "TT-CRET-65M",
     brand: { "@type": "Brand", name: "TimeTravel Agency" },
     offers: {
       "@type": "Offer",
       url: "https://time-travel-beta.vercel.app/#destinations",
       priceCurrency: "EUR",
       price: "18900",
+      priceValidUntil: "2026-12-31",
+      itemCondition: "https://schema.org/NewCondition",
       availability: "https://schema.org/InStock",
     },
   },
@@ -149,12 +161,15 @@ const jsonLd = [
     description:
       "Rencontrez les plus grands génies de la Renaissance et contemplez la création des chefs-d'œuvre qui ont changé le monde.",
     image: "https://time-travel-beta.vercel.app/images/florence.png",
+    sku: "TT-FLO-1504",
     brand: { "@type": "Brand", name: "TimeTravel Agency" },
     offers: {
       "@type": "Offer",
       url: "https://time-travel-beta.vercel.app/#destinations",
       priceCurrency: "EUR",
       price: "14200",
+      priceValidUntil: "2026-12-31",
+      itemCondition: "https://schema.org/NewCondition",
       availability: "https://schema.org/InStock",
     },
   },

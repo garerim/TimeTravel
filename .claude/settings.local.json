@@ -10,7 +10,8 @@
       "Bash(cp IA-Image/dino3-2.png public/images/dino.png)",
       "Bash(cp IA-Image/flo3-2.png public/images/florence.png)",
       "Bash(cp IA-Image/paris1-1.png public/images/paris-square.png)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "WebFetch(domain:time-travel-beta.vercel.app)"
     ]
   }
 }
