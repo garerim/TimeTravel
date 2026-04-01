@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
-      "Bash(npx create-next-app@latest timetravel-app --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)"
+      "Bash(npx create-next-app@latest timetravel-app --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(npx shadcn@latest add card dialog input textarea scroll-area badge -y)",
+      "Bash(npm install:*)",
+      "Bash(mkdir -p public/images public/videos)",
+      "Bash(cp IA-Image/paris3-2.png public/images/paris.png)",
+      "Bash(cp IA-Image/dino3-2.png public/images/dino.png)",
+      "Bash(cp IA-Image/flo3-2.png public/images/florence.png)",
+      "Bash(cp IA-Image/paris1-1.png public/images/paris-square.png)",
+      "Bash(npm run:*)"
     ]
   }
 }
